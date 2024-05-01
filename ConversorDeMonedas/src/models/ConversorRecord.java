@@ -6,7 +6,7 @@ public record ConversorRecord(String base_code, String target_code, Double conve
         return "---------------------------------------------------\n"
                 +"Moneda Base: \t\t\t" + base_code
                 +"\nMoneda a convertir: \t" + target_code
-                +"\nCantidad convertida: \t" + conversion_result
+                +"\nTotal de conversión: \t$" + conversion_result
                 +"\n-------------------------------------------------\n";
     }
 }

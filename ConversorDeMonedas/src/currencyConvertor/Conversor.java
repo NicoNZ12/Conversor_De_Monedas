@@ -8,6 +8,7 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Conversor {
@@ -16,7 +17,7 @@ public class Conversor {
         HttpClient client = HttpClient.newBuilder().build();
 
         URI direccion = URI.create("https://v6.exchangerate-api.com/v6/4a4e0050f86c4dc0dddc9321/pair/"
-                + moneda_base.toUpperCase() + "/" + moneda_target.toUpperCase() + "/"+cantidad);
+                + moneda_base.toUpperCase() + "/" + moneda_target.toUpperCase() + "/" + cantidad);
 
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(direccion)
@@ -34,8 +35,18 @@ public class Conversor {
     }
 
     private static void pedirCantidad(){
-        System.out.println("Ingrese la cantidad de dinero a convertir: ");
-        cantidad = new Scanner(System.in).nextDouble();
+        Scanner sc = new Scanner(System.in);
+        do{
+            try {
+                System.out.println("Ingrese la cantidad de dinero a convertir: ");
+                cantidad = sc.nextDouble();
+            }catch (InputMismatchException e){
+                System.out.println("\nDebe ingresar una cantidad en número\n");
+                sc.nextLine();
+                continue;
+            }
+            break;
+        }while(true);
     }
 
     public static void usd_ars(){
