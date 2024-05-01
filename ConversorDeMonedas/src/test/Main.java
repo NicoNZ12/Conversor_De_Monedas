@@ -1,7 +1,6 @@
 package test;
 
 import currencyConvertor.Conversor;
-import models.ConversorRecord;
 
 import java.util.Scanner;
 
@@ -16,12 +15,12 @@ public class Main {
             System.out.println("****************************************");
             System.out.println("----- Monedas principales -----");
             System.out.println("""
-                1) Dólar [USD] -> Peso argentino [ARS]
-                2) Peso argentino [ARS] -> Dólar [USD]
-                3) Dólar [USD] -> Real brasileño [BRL]
-                4) Real brasileño [BRL] -> Dólar [USD]
-                5) Dólar [USD] -> Euro [EUR]
-                6) Euro [EUR] -> Dólar [USD]
+                1) Dólar [USD] --> Peso argentino [ARS]
+                2) Peso argentino [ARS] --> Dólar [USD]
+                3) Dólar [USD] --> Real brasileño [BRL]
+                4) Real brasileño [BRL] --> Dólar [USD]
+                5) Dólar [USD] --> Euro [EUR]
+                6) Euro [EUR] --> Dólar [USD]
                 7) Otras monedas
                 0) Salir
                 ****************************************
