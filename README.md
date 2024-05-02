@@ -17,9 +17,13 @@ El programa realiza la conversión de 4 monedas principales con el monto que el 
 
 ![Captura de pantalla 2024-05-01 192802](https://github.com/NicoNZ12/Conversor_De_Monedas/assets/135768377/59e539ac-8ab5-464b-9eec-007fc1304d53)
 
-   
-Sin embargo, también puede elegir que otras monedas convertir.
+Sin embargo, también el usuario puede elegir que otras monedas convertir.
 ![Captura de pantalla 2024-05-01 192840](https://github.com/NicoNZ12/Conversor_De_Monedas/assets/135768377/ea6733ff-8872-41a8-9410-57a6817bba6f)
+
+Otra funcionalidad es el historial de conversión. Al finalizar el programa, este muestra el historial con todas las conversiones que realizaste, con fecha y hora.
+
+![Captura de pantalla 2024-05-01 214613](https://github.com/NicoNZ12/Conversor_De_Monedas/assets/135768377/0242fcd6-a663-4eae-bde8-11d653403bb8)
+
 
 
 ## 💻 Tecnologías utilizada
